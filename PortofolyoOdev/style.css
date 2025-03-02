@@ -1,0 +1,276 @@
+/*bu projede ai (artificial intelligence) yerine hi (human intelligence: insan zekası) kullanılmıştır */
+
+/*tarayıcının margini sıfırla ve font seç*/
+*
+{
+    margin: 0;
+    font-family: system-ui, sans-serif;
+}
+
+/*sayfanın arka plan rengi*/
+body
+{
+    background-color: var(--href-color);
+}
+
+/* sayfadaki p ve h1 taglarının night/light modu*/
+p, h1, figcaption
+{
+    color: var(--text-color);
+}
+
+/* site teması */
+:root
+{
+    --background-main: rgb(240, 240, 240);
+    --background-dark: rgb(230, 230, 230);
+    --black: rgb(50,50,50);
+    --href-color: rgb(240, 240, 240);
+    --text-color: black;
+}
+
+/* site dark teması */
+[data-theme="dark"]{
+    --background-main: rgb(040, 040, 040);
+    --background-dark: rgb(030, 030, 030);
+    --black: rgb(150,150,150);
+    --href-color: rgb(040, 040, 040);
+    --text-color: white;
+}
+
+/* site light teması */
+[data-theme="light"]{
+    --background-main: rgb(240, 240, 240);
+    --background-dark: rgb(230, 230, 230);
+    --black: rgb(50,50,50);
+    --href-color: rgb(240, 240, 240);
+    --text-color: black;
+}
+
+header
+{
+    display: flex;
+    background-color:var(--background-main);
+}
+
+nav
+{
+    background-color: var(--background-dark);
+}
+
+
+/* projelerin yer aldığı section kısmı */
+section
+{
+    flex-grow: 1;
+    background-color:var(--background-main);
+}
+
+aside
+{
+
+}
+
+footer
+{
+
+}
+
+figure
+{
+    margin: 1rem;
+    width: min-content;
+}
+
+time
+{
+    float: right;
+    font-size: 0.8rem;
+    padding-right: 1rem;
+}
+
+address
+{
+    padding: 0.3rem;
+    color: var(--text-color);
+}
+
+article
+{
+    margin: 1rem;
+    background-color: var(--background-dark);
+    border-radius: 5px;
+}
+
+
+/* sitenin max genişliği */
+#root
+{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Berkay Efe'nin Portfolyosu yazısı*/
+#root-title
+{
+    font-size: 1.5rem;
+    align-self: center;
+    margin-left: 1.2rem;
+    width: 100%;
+    color: var(--text-color);
+}
+
+/* day/night modu butonu*/
+#mode-button
+{
+    margin: 0.4rem;
+    aspect-ratio: 1;
+    border-radius: 5px;
+    border: 0;
+    max-width: 40px;
+    max-height: 40px;
+    padding: 0.4rem;
+    background-color: var(--black);
+}
+
+#navbar
+{
+    display: flex;
+    gap: 2rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+/* navbardaki href elemanları */
+.nav-href
+{
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--background-main);
+    border-radius: 5px;
+}
+
+.nav-href:hover
+{
+    background-color: #007bb5;
+    transition: 0.2s;
+}
+
+/* list dekor rengi*/
+.nav-li
+{
+    color: var(--text-color);
+}
+
+/* header ve footer kısmı hariç sitenin hepsi bu container'da*/
+#main
+{
+    display: flex;
+    height: 80vh
+}
+
+#root-aside
+{
+    flex-grow: 0;
+    background-color:var(--background-main);
+}
+
+/* en alttaki footer*/
+#root-footer
+{
+    background-color: var(--background-dark);
+    height: 10vh;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 5px;
+}
+
+.aside-article
+{
+    background-color: var(--background-dark);
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    max-width: 20vw;
+}
+
+#display-button, #login-button
+{
+    margin: 0.4rem;
+    aspect-ratio: 1;
+    border-radius: 5px;
+    border: 0;
+    max-width: 40px;
+    max-height: 40px;
+    padding: 0.4rem;
+    background-color: var(--black);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    background-color: var(--background-dark);
+    z-index: 1000;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.forms
+{
+    border-color: #007bb5;
+    border-radius: 5px;
+}
+
+#login-button:hover, #display-button:hover, #mode-button:hover
+{
+    background-color: #007bb5;
+    border-radius: 5px;
+}

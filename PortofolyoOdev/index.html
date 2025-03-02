@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolyom</title>
+</head>
+
+<body>
+    <div id="root">
+
+        <div class="overlay" id="overlay" onclick="closePopup(1)"></div>
+        <div class="popup" id="popup">
+            <h1 style="font-size: 1rem; margin: 1rem;">Giriş Yap</h1>
+            <form style="margin: 1rem; color:var(--text-color);" name="girisformu" onsubmit="">
+                Mail: <input class="forms" type="text" name="mail"><br>
+                Şifre: <input class="forms" style="margin-top: 0.2rem;" type="text" name="pass">
+            </form>
+            <button style="margin-left: 1rem;" onclick="closePopup(0)">Giriş Yap</button>
+        </div>
+
+        <header>
+            <h1 id="root-title">Berkay Efe'nin Portfolyosu</h1>
+            <img src="enter.png" id="login-button"></img>
+            <img src="laptop.png" id="display-button"></img>
+            <img src="contrast.png" id="mode-button"></img>
+        </header>
+        <nav>
+            <ul id="navbar">
+                <li class="nav-li"><a class="nav-href" href="">Hakkımda</a></li>
+                <li class="nav-li"><a class="nav-href" href="">Haberler</a></li>
+                <li class="nav-li"><a class="nav-href" href="">Ayarlar</a></li>
+            </ul>
+        </nav>
+        <div id="main">
+            <section id="main-section">
+                <p style="padding-left: 1rem; padding-top: 0.5rem;">Ben Berkay Efe Özben, BTMYO Ön Yüz Yazılım Öğrencisiyim.</p>
+                <article>
+                    <h1>ÜniYemek Projesi</h1>
+                    <p>ÜniYemek ile artık birçok öğrenci tek bir uygulama ile hızlıca üniversite menülerine bakabilir, kalori takipi, <br> fiyat listesi, yorumlar gibi çeşitli özellikleri kullanabilir.</p>
+                    <figure>
+                        <img src="uniyemek.png" alt="UniYemek" style="max-width: 300px;">
+                        <figcaption>UniYemek Ana Sayfası</figcaption>
+                      </figure>
+                    <p>Yukarıda görüldüğü üzere üniversite, öğün ve tarih seçimi bulunmaktadır. <time>Yazım Tarihi: 2.03.2025</time></p>
+                </article>
+                <article>
+                    <h1>Satrancla</h1>
+                    <p>Satrancla, yerel veya botlara karşı hızlı ve reklamsız bir satranç deneyimi yaşatır.</p>
+                    <figure>
+                        <img src="satrancla.png" alt="UniYemek" style="max-width: 300px;">
+                        <figcaption>Satrancla Ana Sayfası</figcaption>
+                      </figure>
+                    <p>Bot olarak stockfish kullanılmıştır ve mobil cihazlar için uygundur. <time>Yazım Tarihi: 1.03.2025</time></p>
+                </article>
+                <article>
+                    <address style="display: flex; justify-content: center;">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </address>
+                </article>
+            </section>
+            <aside id="root-aside">
+                <h1 style="text-align:center; margin-top: 2rem;">Haberler</h1>
+                <div class="aside-article">
+                    <h1 style="font-size: 0.9rem;">Uzay Turizmi</h1>
+                    <p style="word-break: break-all;">Özel uzay şirketi StellarX 2026 yılında turistleri Ay’a götürmeyi planladığını duyurdu.Şirketin CEO’su, “Uzayı herkes için erişilebilir hale  getirmek istiyoruz” dedi. Bilet fiyatları  henüz açıklanmasa da, bu deneyimin milyonlarca dolara mal olacağı tahmin ediliyor.</p>
+                </div>
+                <div class="aside-article">
+                    <h1 style="font-size: 0.9rem;">Şaşırtan Keşif!</h1>
+                    <p style="word-break: break-all;">Arkeologlar, Arjantin’de 90 milyon yıl önce yaşadığı  tahmin edilen yeni bir dinozor türü keşfetti. ‘Gigantoraptor Rex’ adı verilen bu türün, diğer etçil dinozorlara göre  daha hızlı olduğu belirtiliyor.</p>
+                </div>
+                <div class="aside-article">
+                    <h1 style="font-size: 0.9rem;">Kahve Fiyatları</h1>
+                    <p style="word-break: break-all;">Kahve severler için kötü haber! Brezilya ve Kolombiya’daki olumsuz hava koşulları nedeniyle kahve üretimi düştü, fiyatlar son 10 yılın en yüksek seviyesine çıktı.</p>
+                </div>
+            </aside>
+        </div>
+        <footer id="root-footer">
+            <address>
+                Tarafından Yazıldı: <a href="mailto:ornekmail@gmail.com">Berkay Efe</a>.<br> 
+                Bizi ziyaret et:<br>
+                localhost.com<br>
+            </address>
+            <p style="float: right; font-size: 0.8rem;">2025-2026 Tüm Hakları Saklıdır © Berkay LTD</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
